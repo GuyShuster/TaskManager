@@ -1,0 +1,77 @@
+body {
+    font-family: arial, sans-serif;
+}
+
+form {
+    height: 100%;
+    width: 100%;
+}
+
+/* Grid layout */
+.main-container {
+    display: grid;
+    height: 97vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "search-container new-task-container"
+    "tasks-container tasks-container";
+    border: 1px black solid;
+    border-radius: 3px;
+}
+
+.search-container {
+    grid-area: search-container;
+    border: 1px black solid;
+}
+
+.new-task-container {
+    grid-area: new-task-container;
+    border: 1px black solid;
+}
+
+.tasks-container {
+    grid-area: tasks-container;
+    border: 1px black solid;
+}
+
+/* The search box */
+
+.search-content, .new-task-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.tasks-content {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#search-tasks-input, #new-task-description-input, #new-task-name-input {
+    width: 50%;
+    height: 10%;
+}
+
+.tasks-table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+

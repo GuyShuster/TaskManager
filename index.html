@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container">
+    <div class="search-container">
+        <form action="/" method="get">
+            <div class="search-content">
+                <h3>Search tasks by name or content:</h3>
+                <input type="text" name="search-tasks-input" id="search-tasks-input">
+                <button>Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="new-task-container">
+        <form action="/" method="get">
+            <div class="new-task-content">
+                <h3>Enter a new task:</h3>
+                <input type="text" name="new-task-name-input" id="new-task-name-input">
+                <input type="text" name="new-task-description-input" id="new-task-description-input">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="tasks-container">
+        <div class="tasks-content">
+            <table class="tasks-table">
+                <tr>
+                    <th>Task Name</th>
+                    <th>Task Description</th>
+                    <th>Complete Task</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>
+                        <button>Complete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>
+                        <button>Complete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>
+                        <button>Complete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
