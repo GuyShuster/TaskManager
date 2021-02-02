@@ -23,11 +23,11 @@ const vueApp = new Vue({
                 },
             ],
             searchTasksForm: {
-                searchString: null
+                searchString: ''
             },
             newTaskForm: {
-                taskName: null,
-                taskDescription: null
+                taskName: '',
+                taskDescription: ''
             },
         };
     },

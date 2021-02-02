@@ -1,14 +1,16 @@
 html {
     height: 100vh;
 }
+
 body {
     font-family: arial, sans-serif;
 }
 
-form {
+.stretch-completely {
     height: 100%;
     width: 100%;
 }
+
 
 /* Grid layout */
 .main-container {
@@ -24,19 +26,20 @@ form {
     border-radius: 3px;
 }
 
+.box {
+    border: 1px black solid;
+}
+
 .search-container {
     grid-area: search-container;
-    border: 1px black solid;
 }
 
 .new-task-container {
     grid-area: new-task-container;
-    border: 1px black solid;
 }
 
 .tasks-container {
     grid-area: tasks-container;
-    border: 1px black solid;
 }
 
 /* The search box */
@@ -46,16 +49,9 @@ form {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%;
-    width: 100%;
 }
 
-.tasks-content {
-    height: 100%;
-    width: 100%;
-}
-
-#search-tasks-input, #new-task-description-input, #new-task-name-input {
+.input-box {
     width: 50%;
     height: 10%;
 }
@@ -63,8 +59,6 @@ form {
 .tasks-table {
     table-layout: fixed;
     border-collapse: collapse;
-    height: 100%;
-    width: 100%;
 }
 
 td, th {

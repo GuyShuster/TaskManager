@@ -10,11 +10,11 @@
 <body>
 <div id="app">
     <div class="main-container">
-        <div class="search-container">
-            <form @submit.prevent="submitSearchForm" id="search-task-form">
-                <div class="search-content">
+        <div class="search-container box">
+            <form class="stretch-completely" @submit.prevent="submitSearchForm" id="search-task-form">
+                <div class="search-content stretch-completely">
                     <h3>Search tasks by name:</h3>
-                    <input type="text" name="search-tasks-input" id="search-tasks-input"
+                    <input class="input-box" type="text" name="search-tasks-input" id="search-tasks-input"
                            required
                            v-model="searchTasksForm.searchString">
                     <button>Search</button>
@@ -22,15 +22,15 @@
 
             </form>
         </div>
-        <div class="new-task-container">
-            <form @submit.prevent="submitNewTaskForm" id="new-task-form">
-                <div class="new-task-content">
+        <div class="new-task-container box">
+            <form class="stretch-completely" @submit.prevent="submitNewTaskForm" id="new-task-form">
+                <div class="new-task-content stretch-completely">
                     <h3>Enter a new task:</h3>
-                    <input type="text" name="new-task-name-input" id="new-task-name-input"
+                    <input class="input-box" type="text" name="new-task-name-input" id="new-task-name-input"
                            placeholder="Task name"
                            required
                            v-model="newTaskForm.taskName">
-                    <input type="text" name="new-task-description-input" id="new-task-description-input"
+                    <input class="input-box" type="text" name="new-task-description-input" id="new-task-description-input"
                            placeholder="Task description"
                            required
                            v-model="newTaskForm.taskDescription">
@@ -38,9 +38,9 @@
                 </div>
             </form>
         </div>
-        <div class="tasks-container">
-            <div class="tasks-content">
-                <table class="tasks-table">
+        <div class="tasks-container box">
+            <div class="tasks-content stretch-completely">
+                <table class="tasks-table stretch-completely">
                     <tr>
                         <th>Task Name</th>
                         <th>Task Description</th>
