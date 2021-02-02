@@ -1,3 +1,6 @@
+html {
+    height: 100vh;
+}
 body {
     font-family: arial, sans-serif;
 }
@@ -48,7 +51,6 @@ form {
 }
 
 .tasks-content {
-    display: table;
     height: 100%;
     width: 100%;
 }
@@ -68,6 +70,7 @@ form {
 td, th {
     border: 1px solid #dddddd;
     text-align: center;
+
 }
 
 tr:nth-child(even) {
